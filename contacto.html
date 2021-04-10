@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contacto</title>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+	<h1>JA Mantenimiento</h1>
+
+    <div class="menuContainer">
+		<ul class="menu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="servicios.html">Nuestros Servicios</a></li>
+			<li><a href="valores.html">Nuestros Valores</a></li>
+  
+			<li><a class="contactButton" href="contacto.html">Contactanos</a></li>
+		  </ul>
+	</div>
+    </div>
+	<h2 class="formTitle">Contacto</h2>
+	<!-- Comentario para agregar en commit de git-->
+	<div class="formstyle">
+
+		<form>
+			<div>Nombre y Apellido (*)</div>
+			<input type="text" name="nombre" value="" />
+			<select name="Sexo">
+				<option value="mujer">Mujer</option>
+				<option value="hombre">Hombre</option>
+			</select>
+			<div>Email (*)</div>
+			<input type="text" name="email" value="" />
+			<div>Teléfono (*)</div>
+			<input type="text" name="telefono" value="" />
+			<div>Describe el trabajo a realizar (*)</div>
+			<textarea rows="4" cols="15" name="descripcion" value=""></textarea>
+			<div>
+				Desea recibir notificaciones
+				<input type="checkbox" name="acepta" value="1" />
+			</div>
+			<div>
+				<input type="reset" value="Limpiar Formulario" />
+			</div>
+			<div>
+				<input type="submit" value="Enviar" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
