@@ -1,6 +1,7 @@
 body {
   font-family: "Yanone Kaffeesatz", sans-serif;
-  background-image: url("background.png"); }
+  background-image: url("../background.png");
+  width: 100%; }
 
 h1 {
   color: #ffffff;
