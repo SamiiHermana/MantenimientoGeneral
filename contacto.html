@@ -79,34 +79,40 @@
 		</div>
 	  </nav>
   
-	<h2 class="formTitle">Contacto</h2>
+	<h2 class="formTitle">Contacto / Presupuesto</h2>
 	<!-- Comentario para agregar en commit de git-->
-	<div class="formstyle">
 
-		<form>
-			<div>Nombre y Apellido (*)</div>
-			<input type="text" name="nombre" value="" />
-			<select name="Sexo">
-				<option value="mujer">Mujer</option>
-				<option value="hombre">Hombre</option>
-			</select>
-			<div>Email (*)</div>
-			<input type="text" name="email" value="" />
-			<div>Teléfono (*)</div>
-			<input type="text" name="telefono" value="" />
-			<div>Describe el trabajo a realizar (*)</div>
-			<textarea rows="4" cols="15" name="descripcion" value=""></textarea>
-			<div>
-				Desea recibir notificaciones
-				<input type="checkbox" name="acepta" value="1" />
-			</div>
-			<div>
-				<input type="reset" value="Limpiar Formulario" />
-			</div>
-			<div>
-				<input type="submit" value="Enviar" />
-			</div>
-		</form>
+
+	<div class="formstyle">
+	<div class="input-group mb-3">
+		<span class="input-group-text" id="inputGroup-sizing-default">Nombre y Apellido</span>
+		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+	  
 	</div>
+	<div class="input-group mb-3">
+	<select class="form-select" aria-label="Default select example">
+		<option selected>Sexo</option>
+		<option value="1">Femenino</option>
+		<option value="2">Masculino</option>
+	  </select>
+	</div>
+	<div class="input-group mb-3">
+		<span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+	  
+	</div>
+	<div class="input-group mb-3">
+		<span class="input-group-text" id="inputGroup-sizing-default">Teléfono</span>
+		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+	  
+	</div>
+	<div class="input-group mb-3">
+		<span class="input-group-text" id="inputGroup-sizing-lg">Describa el trabajo a realizar</span>
+		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+	  
+	</div>
+	<input class="btn btn-primary" type="submit" value="Enviar">
+	</div>
+
 </body>
 </html>
