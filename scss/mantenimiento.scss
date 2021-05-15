@@ -1,6 +1,9 @@
 @import "variables";
 @import "fuentes";
 
+$ancho-per: 50%;
+$ancho-px: 100px;
+
 body {
   font-family: $mainFont;
   background-image: linear-gradient(
@@ -8,7 +11,7 @@ body {
     rgba(58, 76, 180, 1) 0%,
     rgba(29, 156, 253, 0.5088410364145659) 92%
   );
-  width: 100%;
+  width: $ancho-per*2;
 }
 
 h1 {
@@ -59,7 +62,7 @@ a {
 
 .header {
   background-color: $blueP;
-  width:100%;
+  width:$ancho-per*2;
   padding: 10px;
   height: 30px;
   position: absolute;
@@ -69,12 +72,12 @@ a {
 }
 .container-xxl {
   height: 30px;
-  width:100%;
+  width:$ancho-per*2;
 }
 
 .mainTitle {
   position: absolute;
-  width: 600px;
+  width: $ancho-px*6;
   height: 248px;
   left: 64px;
   top: 150px;
@@ -101,7 +104,7 @@ a {
 
 .menu li {
   display: inline-block;
-  width: 154px;
+  width: $ancho-px+54px;
   padding: 5px 10px;
   background-color: transparent;
   text-align: center;
@@ -137,7 +140,7 @@ a {
 .formstyle {
   display: grid;
   background-color: transparent;
-  width:50%;
+  width:$ancho-per;
   padding: 30px;
   color:$softWhite;
   font-size: 30px;
@@ -152,7 +155,7 @@ a {
 
 .electricista {
   position: absolute;
-  width: 600px;
+  width: $ancho-px*6;
   height: 320px;
   left: 1000px;
   margin-top: 80px;
@@ -170,7 +173,7 @@ a {
 }
 
 .circleCustomers {
-  width: 200px;
+  width: $ancho-px*2;
   height: 200px;
   border-radius: 150px;
   border-width: 6px;
@@ -266,7 +269,7 @@ background-color:$darkBlue;
 }
 
 .circleImages {
-  width: 300px;
+  width: $ancho-px*3;
   height: 300px;
   border-radius: 150px;
   border: solid;
@@ -326,12 +329,12 @@ background-color:$darkBlue;
 }
 
 .nosotrosImage {
-  width: 400px;
+  width: $ancho-px*4;
   height: 300px;
 }
 
 .nosotrosText {
-  width: 1000px;
+  width: $ancho-px*10;
   height: 300px;
   font-style: italic;
   margin-top: 500px;
@@ -382,7 +385,7 @@ background-color:$darkBlue;
 }
 
 .mantenimientoText {
-  width: 80%;
+  width: $ancho-per + 30%;
   height: 30%;
   /* text-align: center; */
   margin-left: 10%;
