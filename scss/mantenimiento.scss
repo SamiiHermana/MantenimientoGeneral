@@ -11,7 +11,7 @@ body {
     rgba(58, 76, 180, 1) 0%,
     rgba(29, 156, 253, 0.5088410364145659) 92%
   );
-  width: $ancho-per*2;
+  width: $ancho-per * 2;
 }
 
 h1 {
@@ -22,7 +22,6 @@ h1 {
   margin-right: 20px;
   font-weight: 900;
   vertical-align: middle;
-
 }
 
 h2 {
@@ -52,7 +51,6 @@ img {
 }
 
 ol {
-
   font-size: 20px;
 }
 
@@ -62,7 +60,7 @@ a {
 
 .header {
   background-color: $blueP;
-  width:$ancho-per*2;
+  width: $ancho-per * 2;
   padding: 10px;
   height: 30px;
   position: absolute;
@@ -72,12 +70,12 @@ a {
 }
 .container-xxl {
   height: 30px;
-  width:$ancho-per*2;
+  width: $ancho-per * 2;
 }
 
 .mainTitle {
   position: absolute;
-  width: $ancho-px*6;
+  width: $ancho-px * 6;
   height: 248px;
   left: 64px;
   top: 150px;
@@ -104,18 +102,18 @@ a {
 
 .menu li {
   display: inline-block;
-  width: $ancho-px+54px;
+  width: $ancho-px + 54px;
   padding: 5px 10px;
   background-color: transparent;
   text-align: center;
-  color:$softWhite;
+  color: $softWhite;
   font-weight: 700;
   top: 10px;
   left: 10px;
 }
 
 .menu li:hover {
-  color:$softWhite;
+  color: $softWhite;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -124,7 +122,7 @@ a {
   background-color: $darkBlue;
   border-radius: 5%;
   padding: 10px;
-  color:$softWhite;
+  color: $softWhite;
   margin-left: 50px;
 }
 
@@ -140,22 +138,16 @@ a {
 .formstyle {
   display: grid;
   background-color: transparent;
-  width:$ancho-per;
+  width: $ancho-per;
   padding: 30px;
-  color:$softWhite;
+  color: $softWhite;
   font-size: 30px;
   margin-left: 25%;
-  
-
-
-
 }
-
-
 
 .electricista {
   position: absolute;
-  width: $ancho-px*6;
+  width: $ancho-px * 6;
   height: 320px;
   left: 1000px;
   margin-top: 80px;
@@ -173,11 +165,11 @@ a {
 }
 
 .circleCustomers {
-  width: $ancho-px*2;
+  width: $ancho-px * 2;
   height: 200px;
   border-radius: 150px;
   border-width: 6px;
-background-color:$darkBlue;
+  background-color: $darkBlue;
 }
 
 .gridContainer {
@@ -203,63 +195,63 @@ background-color:$darkBlue;
 
 .box-2 {
   grid-area: box2;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-3 {
   grid-area: box3;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-4 {
   grid-area: box4;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-6 {
   grid-area: box6;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 300px;
   margin-top: 250px;
 }
 
 .box-7 {
   grid-area: box7;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 300px;
   margin-top: 250px;
 }
 
 .box-8 {
   grid-area: box8;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 300px;
   margin-top: 250px;
 }
 
 .box-9 {
   grid-area: box9;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-10 {
   grid-area: box10;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-11 {
   grid-area: box11;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   height: 50px;
   margin-top: 250px;
 }
@@ -269,7 +261,7 @@ background-color:$darkBlue;
 }
 
 .circleImages {
-  width: $ancho-px*3;
+  width: $ancho-px * 3;
   height: 300px;
   border-radius: 150px;
   border: solid;
@@ -329,59 +321,71 @@ background-color:$darkBlue;
 }
 
 .nosotrosImage {
-  width: $ancho-px*4;
+  width: $ancho-px * 4;
   height: 300px;
 }
 
 .nosotrosText {
-  width: $ancho-px*10;
+  width: $ancho-px * 10;
   height: 300px;
   font-style: italic;
   margin-top: 500px;
 }
+.valorescontainer{
+  width: $ancho-per;
+  height: 50%;
+  background-color: rgb(238, 226, 226);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 500px;
+}
+.valores {
+  display: flex;
 
-.gridValues {
-  display: grid;
-  align-items: center;
-  grid-template-columns: auto 400px auto;
-  grid-template-rows: repeat(6, 100px);
-  grid-gap: 15rem;
-  grid-template-areas: "val1 val2 ." "val3 val4 ." " val5 val5 .";
+}
+.valores__item  {
+  background-color: $darkBlue;
+  opacity: 0.9;
+  width: $ancho-px*3;
+  height: 50px;
+  margin-top: 20px;
+  color: $softWhite;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 5px;
+
+}
+.valores__item:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  border-width: 10px;
 }
 
-.val-1 {
-  grid-area: val1;
-  background-color:$darkGray;
-  height: 150px;
-  margin-top: 250px;
+.valores__centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.val-2 {
+
+.valores__compromiso {
   grid-area: val2;
-  background-color:$darkGray;
-  height: 50px;
-  margin-top: 250px;
 }
 
-.val-3 {
+.valores__eficiencia {
   grid-area: val3;
-  background-color:$darkGray;
-  height: 50px;
-  margin-top: 250px;
 }
 
-.val-4 {
+.valores__pasion {
   grid-area: val4;
-  background-color:$darkGray;
-  height: 50px;
-  margin-top: 250px;
 }
 
-.val-5 {
+.valores__evolucion {
   grid-area: val5;
-  background-color:$darkGray;
-  height: 50px;
-  margin-top: 250px;
 }
 
 .mantenimientoText {
@@ -395,9 +399,9 @@ background-color:$darkBlue;
   margin-left: 10%;
 }
 
-.customers-carousel{
+.customers-carousel {
   margin-top: 400px;
 }
-.carousel-item{
-margin:auto;
+.carousel-item {
+  margin: auto;
 }

@@ -280,43 +280,53 @@ a {
   font-style: italic;
   margin-top: 500px; }
 
-.gridValues {
-  display: grid;
-  align-items: center;
-  grid-template-columns: auto 400px auto;
-  grid-template-rows: repeat(6, 100px);
-  grid-gap: 15rem;
-  grid-template-areas: "val1 val2 ." "val3 val4 ." " val5 val5 ."; }
+.valorescontainer {
+  width: 50%;
+  height: 50%;
+  background-color: #eee2e2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 500px; }
 
-.val-1 {
-  grid-area: val1;
-  background-color: #3a3d3d;
-  height: 150px;
-  margin-top: 250px; }
+.valores {
+  display: flex; }
 
-.val-2 {
-  grid-area: val2;
-  background-color: #3a3d3d;
+.valores__item {
+  background-color: #29336e;
+  opacity: 0.9;
+  width: 300px;
   height: 50px;
-  margin-top: 250px; }
+  margin-top: 20px;
+  color: #fcfcfc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 5px; }
 
-.val-3 {
-  grid-area: val3;
-  background-color: #3a3d3d;
-  height: 50px;
-  margin-top: 250px; }
+.valores__item:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  border-width: 10px; }
 
-.val-4 {
-  grid-area: val4;
-  background-color: #3a3d3d;
-  height: 50px;
-  margin-top: 250px; }
+.valores__centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
-.val-5 {
-  grid-area: val5;
-  background-color: #3a3d3d;
-  height: 50px;
-  margin-top: 250px; }
+.valores__compromiso {
+  grid-area: val2; }
+
+.valores__eficiencia {
+  grid-area: val3; }
+
+.valores__pasion {
+  grid-area: val4; }
+
+.valores__evolucion {
+  grid-area: val5; }
 
 .mantenimientoText {
   width: 80%;
