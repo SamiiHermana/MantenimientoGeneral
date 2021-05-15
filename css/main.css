@@ -1,10 +1,15 @@
+html,
+body,
+#root {
+  height: 100%; }
+
 body {
   font-family: "Yanone Kaffeesatz", sans-serif;
   background-image: linear-gradient(90deg, #3a4cb4 0%, rgba(29, 156, 253, 0.508841) 92%);
   width: 100%; }
 
 h1 {
-  color: #3a4cb4;
+  color: #29336e;
   font-size: 50px;
   margin-top: 5px;
   margin-left: 50px;
@@ -13,28 +18,27 @@ h1 {
   vertical-align: middle; }
 
 h2 {
-  color: #fff;
+  color: #fcfcfc;
   font-size: 40px;
   margin-left: 50px;
   margin-top: 70px; }
 
 h3 {
-  color: #fff;
+  color: #fcfcfc;
   font-size: 35px; }
 
 p {
-  color: #fff;
+  color: #fcfcfc;
   font-size: 25px;
   margin: auto; }
 
 ul {
-  color: #fff; }
+  color: #fcfcfc; }
 
 img {
   width: 200px; }
 
 ol {
-  color: #6f2c6b;
   font-size: 20px; }
 
 a {
@@ -74,7 +78,7 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: 18px;
-  color: #ffffff;
+  color: #fcfcfc;
   font-weight: 700;
   justify-content: space-between; }
 
@@ -84,21 +88,21 @@ a {
   padding: 5px 10px;
   background-color: transparent;
   text-align: center;
-  color: #ffffff;
+  color: #fcfcfc;
   font-weight: 700;
   top: 10px;
   left: 10px; }
 
 .menu li:hover {
-  color: #fff;
+  color: #fcfcfc;
   font-weight: bold;
   text-decoration: underline; }
 
 .contactButton {
-  background-color: #24006e;
+  background-color: #29336e;
   border-radius: 5%;
   padding: 10px;
-  color: #ffffff;
+  color: #fcfcfc;
   margin-left: 50px; }
 
 .contactButton:hover {
@@ -113,19 +117,9 @@ a {
   background-color: transparent;
   width: 50%;
   padding: 30px;
-  color: #fff;
+  color: #fcfcfc;
   font-size: 30px;
   margin-left: 25%; }
-
-.youtube-player {
-  position: relative;
-  padding-bottom: 25%;
-  height: 0;
-  overflow: hidden;
-  justify-content: center;
-  max-width: 100%;
-  margin-left: 300px;
-  margin-top: 140px; }
 
 .electricista {
   position: absolute;
@@ -135,32 +129,6 @@ a {
   margin-top: 80px;
   z-index: 100;
   background: transparent; }
-
-.youtube-player img {
-  max-width: 70%;
-  width: 70%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  height: auto;
-  cursor: pointer;
-  -webkit-transition: 0.4s all;
-  -moz-transition: 0.4s all;
-  transition: 0.4s all; }
-
-.youtube-player img:hover {
-  -webkit-filter: brightness(75%); }
-
-.youtube-player .play {
-  height: 72px;
-  width: 72px;
-  left: 50%;
-  top: 50%;
-  margin-left: -36px;
-  margin-top: -36px;
-  position: absolute;
-  background: url("//i.imgur.com/TxzC70f.png") no-repeat; }
 
 .mantenimientoContainer {
   margin-top: 150px; }
@@ -296,7 +264,7 @@ a {
   margin-top: 100px; }
 
 .nosotrosTitle {
-  color: #ffffff;
+  color: #fcfcfc;
   font-size: 25px;
   text-align: center;
   vertical-align: middle;
@@ -359,16 +327,8 @@ a {
 .mantenimientoTitle {
   margin-left: 10%; }
 
-table {
-  background-color: #a09d9d;
-  border-collapse: collapse;
-  border: black 3px solid; }
+.customers-carousel {
+  margin-top: 400px; }
 
-td {
-  border: #4d4949 3px solid; }
-
-th {
-  border: #4d4949 3px solid; }
-
-.our-clients {
-  margin-top: 500px; }
+.carousel-item {
+  margin: auto; }

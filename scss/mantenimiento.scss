@@ -2,7 +2,7 @@
 @import "fuentes";
 
 body {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: $mainFont;
   background-image: linear-gradient(
     90deg,
     rgba(58, 76, 180, 1) 0%,
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  color:#3a4cb4;
+  color: $darkBlue;
   font-size: 50px;
   margin-top: 5px;
   margin-left: 50px;
@@ -23,25 +23,25 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: $softWhite;
   font-size: 40px;
   margin-left: 50px;
   margin-top: 70px;
 }
 
 h3 {
-  color: #fff;
+  color: $softWhite;
   font-size: 35px;
 }
 
 p {
-  color: #fff;
+  color: $softWhite;
   font-size: 25px;
   margin: auto;
 }
 
 ul {
-  color: #fff;
+  color: $softWhite;
 }
 
 img {
@@ -49,7 +49,7 @@ img {
 }
 
 ol {
-  color: #6f2c6b;
+
   font-size: 20px;
 }
 
@@ -58,7 +58,7 @@ a {
 }
 
 .header {
-  background-color: #3a4cb4;
+  background-color: $blueP;
   width:100%;
   padding: 10px;
   height: 30px;
@@ -82,7 +82,7 @@ a {
   font-style: normal;
   font-size: 70px;
   line-height: 62px;
-  color: #fcfcfc;
+  color: $softWhite;
 }
 
 .menuContainer {
@@ -94,7 +94,7 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: 18px;
-  color: #ffffff;
+  color: $softWhite;
   font-weight: 700;
   justify-content: space-between;
 }
@@ -105,28 +105,28 @@ a {
   padding: 5px 10px;
   background-color: transparent;
   text-align: center;
-  color: #ffffff;
+  color:$softWhite;
   font-weight: 700;
   top: 10px;
   left: 10px;
 }
 
 .menu li:hover {
-  color: #fff;
+  color:$softWhite;
   font-weight: bold;
   text-decoration: underline;
 }
 
 .contactButton {
-  background-color: #24006e;
+  background-color: $darkBlue;
   border-radius: 5%;
   padding: 10px;
-  color: #ffffff;
+  color:$softWhite;
   margin-left: 50px;
 }
 
 .contactButton:hover {
-  background-color: #565c5c;
+  background-color: $grayP;
 }
 
 .formTitle {
@@ -139,7 +139,7 @@ a {
   background-color: transparent;
   width:50%;
   padding: 30px;
-  color: #fff;
+  color:$softWhite;
   font-size: 30px;
   margin-left: 25%;
   
@@ -148,16 +148,7 @@ a {
 
 }
 
-.youtube-player {
-  position: relative;
-  padding-bottom: 25%;
-  height: 0;
-  overflow: hidden;
-  justify-content: center;
-  max-width: 100%;
-  margin-left: 300px;
-  margin-top: 140px;
-}
+
 
 .electricista {
   position: absolute;
@@ -167,35 +158,6 @@ a {
   margin-top: 80px;
   z-index: 100;
   background: transparent;
-}
-
-.youtube-player img {
-  max-width: 70%;
-  width: 70%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  height: auto;
-  cursor: pointer;
-  -webkit-transition: 0.4s all;
-  -moz-transition: 0.4s all;
-  transition: 0.4s all;
-}
-
-.youtube-player img:hover {
-  -webkit-filter: brightness(75%);
-}
-
-.youtube-player .play {
-  height: 72px;
-  width: 72px;
-  left: 50%;
-  top: 50%;
-  margin-left: -36px;
-  margin-top: -36px;
-  position: absolute;
-  background: url("//i.imgur.com/TxzC70f.png") no-repeat;
 }
 
 .mantenimientoContainer {
@@ -212,7 +174,7 @@ a {
   height: 200px;
   border-radius: 150px;
   border-width: 6px;
-background-color: #29336e;
+background-color:$darkBlue;
 }
 
 .gridContainer {
@@ -238,63 +200,63 @@ background-color: #29336e;
 
 .box-2 {
   grid-area: box2;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-3 {
   grid-area: box3;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-4 {
   grid-area: box4;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-6 {
   grid-area: box6;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 300px;
   margin-top: 250px;
 }
 
 .box-7 {
   grid-area: box7;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 300px;
   margin-top: 250px;
 }
 
 .box-8 {
   grid-area: box8;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 300px;
   margin-top: 250px;
 }
 
 .box-9 {
   grid-area: box9;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-10 {
   grid-area: box10;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 50px;
   margin-top: 250px;
 }
 
 .box-11 {
   grid-area: box11;
-  background-color: #29336e;
+  background-color:$darkBlue;
   height: 50px;
   margin-top: 250px;
 }
@@ -309,7 +271,7 @@ background-color: #29336e;
   border-radius: 150px;
   border: solid;
   border-width: 6px;
-  border-color: #6a6b6b;
+  border-color: $softGray;
   transition: transform 0.2s, outline 0.5s;
   display: block;
   opacity: 0.3;
@@ -356,7 +318,7 @@ background-color: #29336e;
 }
 
 .nosotrosTitle {
-  color: #ffffff;
+  color: $softWhite;
   font-size: 25px;
   text-align: center;
   vertical-align: middle;
@@ -386,35 +348,35 @@ background-color: #29336e;
 
 .val-1 {
   grid-area: val1;
-  background-color: #3a3d3d;
+  background-color:$darkGray;
   height: 150px;
   margin-top: 250px;
 }
 
 .val-2 {
   grid-area: val2;
-  background-color: #3a3d3d;
+  background-color:$darkGray;
   height: 50px;
   margin-top: 250px;
 }
 
 .val-3 {
   grid-area: val3;
-  background-color: #3a3d3d;
+  background-color:$darkGray;
   height: 50px;
   margin-top: 250px;
 }
 
 .val-4 {
   grid-area: val4;
-  background-color: #3a3d3d;
+  background-color:$darkGray;
   height: 50px;
   margin-top: 250px;
 }
 
 .val-5 {
   grid-area: val5;
-  background-color: #3a3d3d;
+  background-color:$darkGray;
   height: 50px;
   margin-top: 250px;
 }
@@ -430,19 +392,9 @@ background-color: #29336e;
   margin-left: 10%;
 }
 
-table {
-  background-color: #a09d9d;
-  border-collapse: collapse;
-  border: black 3px solid;
+.customers-carousel{
+  margin-top: 400px;
 }
-
-td {
-  border: rgb(77, 73, 73) 3px solid;
-}
-
-th {
-  border: rgb(77, 73, 73) 3px solid;
-}
-.our-clients{
-  margin-top: 500px;
+.carousel-item{
+margin:auto;
 }
