@@ -16,7 +16,7 @@ body {
 
 h1 {
   color: $darkBlue;
-  font-size: 50px;
+  font-size: 2.5rem;
   margin-top: 5px;
   margin-left: 50px;
   margin-right: 20px;
@@ -26,19 +26,19 @@ h1 {
 
 h2 {
   color: $softWhite;
-  font-size: 40px;
+  font-size: 2.2rem;
   margin-left: 50px;
   margin-top: 70px;
 }
 
 h3 {
   color: $softWhite;
-  font-size: 35px;
+  font-size: 1.7rem;
 }
 
 p {
   color: $softWhite;
-  font-size: 25px;
+  font-size: 1.5rem;
   margin: auto;
 }
 
@@ -51,11 +51,11 @@ img {
 }
 
 ol {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 a {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .header {
@@ -68,10 +68,7 @@ a {
   right: 0%;
   top: 0%;
 }
-.container-xxl {
-  height: 30px;
-  width: $ancho-per * 2;
-}
+
 
 .mainTitle {
   position: absolute;
@@ -81,53 +78,9 @@ a {
   top: 150px;
   font-weight: 900;
   font-style: normal;
-  font-size: 70px;
+  font-size: 4rem;
   line-height: 62px;
   color: $softWhite;
-}
-
-.menuContainer {
-  margin-top: -50px;
-  text-align: end;
-}
-
-.menu a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 18px;
-  color: $softWhite;
-  font-weight: 700;
-  justify-content: space-between;
-}
-
-.menu li {
-  display: inline-block;
-  width: $ancho-px + 54px;
-  padding: 5px 10px;
-  background-color: transparent;
-  text-align: center;
-  color: $softWhite;
-  font-weight: 700;
-  top: 10px;
-  left: 10px;
-}
-
-.menu li:hover {
-  color: $softWhite;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.contactButton {
-  background-color: $darkBlue;
-  border-radius: 5%;
-  padding: 10px;
-  color: $softWhite;
-  margin-left: 50px;
-}
-
-.contactButton:hover {
-  background-color: $grayP;
 }
 
 .formTitle {
@@ -141,7 +94,7 @@ a {
   width: $ancho-per;
   padding: 30px;
   color: $softWhite;
-  font-size: 30px;
+  font-size: 2rem;
   margin-left: 25%;
 }
 
@@ -173,6 +126,7 @@ a {
 }
 
 .gridContainer {
+  width:auto;
   display: grid;
   align-items: center;
   grid-template-columns: 400px 400px 400px;
@@ -260,6 +214,11 @@ a {
   align-items: center;
 }
 
+.services{
+  margin-top: 4%;
+  text-align: center;
+ 
+}
 .circleImages {
   width: $ancho-px * 3;
   height: 300px;
@@ -279,20 +238,11 @@ a {
   cursor: pointer;
 }
 
-.servicesContainer {
-  margin-top: 150px;
-}
-
-.services {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px;
-}
-
 .contenedor {
   position: relative;
   display: inline-block;
   text-align: center;
+  padding-inline: 4%;
 }
 
 .centrado {
@@ -314,7 +264,7 @@ a {
 
 .nosotrosTitle {
   color: $softWhite;
-  font-size: 25px;
+  font-size: 1.2rem;
   text-align: center;
   vertical-align: middle;
   padding: 12px;
@@ -331,7 +281,7 @@ a {
   font-style: italic;
   margin-top: 500px;
 }
-.valorescontainer{
+.valorescontainer {
   width: $ancho-per;
   height: 50%;
   background-color: rgb(238, 226, 226);
@@ -343,20 +293,18 @@ a {
 }
 .valores {
   display: flex;
-
 }
-.valores__item  {
+.valores__item {
   background-color: $darkBlue;
   opacity: 0.9;
-  width: $ancho-px*3;
+  width: $ancho-px * 3;
   height: 50px;
   margin-top: 20px;
   color: $softWhite;
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
   border-radius: 5px;
-
 }
 .valores__item:hover {
   transform: scale(1.2);
@@ -364,13 +312,12 @@ a {
   border-width: 10px;
 }
 
-.valores__centrado{
+.valores__centrado {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .valores__compromiso {
   grid-area: val2;
@@ -401,4 +348,20 @@ a {
 
 .customers-carousel {
   margin-top: 400px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color:$softWhite;
+  height: 50px;
+  width: 100%;
+}
+.footerText{
+  font-size: 1rem;
+  color:gray;
+  margin-top:10px;
+  margin-left: 20px;
+  font-weight: bold;
+
 }

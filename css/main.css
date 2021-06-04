@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap);
 html,
 body,
 #root {
@@ -10,7 +11,7 @@ body {
 
 h1 {
   color: #29336e;
-  font-size: 50px;
+  font-size: 2.5rem;
   margin-top: 5px;
   margin-left: 50px;
   margin-right: 20px;
@@ -19,17 +20,17 @@ h1 {
 
 h2 {
   color: #fcfcfc;
-  font-size: 40px;
+  font-size: 2.2rem;
   margin-left: 50px;
   margin-top: 70px; }
 
 h3 {
   color: #fcfcfc;
-  font-size: 35px; }
+  font-size: 1.7rem; }
 
 p {
   color: #fcfcfc;
-  font-size: 25px;
+  font-size: 1.5rem;
   margin: auto; }
 
 ul {
@@ -39,10 +40,10 @@ img {
   width: 200px; }
 
 ol {
-  font-size: 20px; }
+  font-size: 1.2rem; }
 
 a {
-  font-size: 30px; }
+  font-size: 2rem; }
 
 .header {
   background-color: #3a4cb4;
@@ -54,10 +55,6 @@ a {
   right: 0%;
   top: 0%; }
 
-.container-xxl {
-  height: 30px;
-  width: 100%; }
-
 .mainTitle {
   position: absolute;
   width: 600px;
@@ -66,47 +63,9 @@ a {
   top: 150px;
   font-weight: 900;
   font-style: normal;
-  font-size: 70px;
+  font-size: 4rem;
   line-height: 62px;
   color: #fcfcfc; }
-
-.menuContainer {
-  margin-top: -50px;
-  text-align: end; }
-
-.menu a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 18px;
-  color: #fcfcfc;
-  font-weight: 700;
-  justify-content: space-between; }
-
-.menu li {
-  display: inline-block;
-  width: 154px;
-  padding: 5px 10px;
-  background-color: transparent;
-  text-align: center;
-  color: #fcfcfc;
-  font-weight: 700;
-  top: 10px;
-  left: 10px; }
-
-.menu li:hover {
-  color: #fcfcfc;
-  font-weight: bold;
-  text-decoration: underline; }
-
-.contactButton {
-  background-color: #29336e;
-  border-radius: 5%;
-  padding: 10px;
-  color: #fcfcfc;
-  margin-left: 50px; }
-
-.contactButton:hover {
-  background-color: #565c5c; }
 
 .formTitle {
   margin-left: 25%;
@@ -118,7 +77,7 @@ a {
   width: 50%;
   padding: 30px;
   color: #fcfcfc;
-  font-size: 30px;
+  font-size: 2rem;
   margin-left: 25%; }
 
 .electricista {
@@ -145,6 +104,7 @@ a {
   background-color: #29336e; }
 
 .gridContainer {
+  width: auto;
   display: grid;
   align-items: center;
   grid-template-columns: 400px 400px 400px;
@@ -219,6 +179,10 @@ a {
 .servicesTitles {
   align-items: center; }
 
+.services {
+  margin-top: 4%;
+  text-align: center; }
+
 .circleImages {
   width: 300px;
   height: 300px;
@@ -236,18 +200,11 @@ a {
   border-width: 10px;
   cursor: pointer; }
 
-.servicesContainer {
-  margin-top: 150px; }
-
-.services {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px; }
-
 .contenedor {
   position: relative;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  padding-inline: 4%; }
 
 .centrado {
   position: absolute;
@@ -265,7 +222,7 @@ a {
 
 .nosotrosTitle {
   color: #fcfcfc;
-  font-size: 25px;
+  font-size: 1.2rem;
   text-align: center;
   vertical-align: middle;
   padding: 12px; }
@@ -302,7 +259,7 @@ a {
   color: #fcfcfc;
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
   border-radius: 5px; }
 
 .valores__item:hover {
@@ -340,5 +297,16 @@ a {
 .customers-carousel {
   margin-top: 400px; }
 
-.carousel-item {
-  margin: auto; }
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fcfcfc;
+  height: 50px;
+  width: 100%; }
+
+.footerText {
+  font-size: 1rem;
+  color: gray;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-weight: bold; }
