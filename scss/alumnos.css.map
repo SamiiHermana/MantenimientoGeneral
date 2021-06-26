@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACOA,AAAA,IAAI;AACJ,IAAI;AACJ,KAAK,CAAC;EACJ,MAAM,EAAE,IAAI;CACb;;ADRD,AAAA,EAAE,CAAA;EACE,KAAK,ECAE,OAAO;EDCd,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,GAAG;EACf,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,MAAM;CACvB;;AAEH,AAAA,QAAQ,CAAA;EACJ,KAAK,ECTD,OAAO;EDUX,SAAS,EAAE,KAAK;CACjB",
+    "sources": [
+        "alumnos.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "alumnos.css"
+}
