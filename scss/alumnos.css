@@ -1,0 +1,21 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+h3 {
+  color: #29336e;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 20px;
+  font-weight: 900;
+  vertical-align: middle;
+}
+
+.alumnos {
+  color: #3a4cb4;
+  font-size: large;
+}
+/*# sourceMappingURL=alumnos.css.map */
