@@ -222,10 +222,7 @@
 //     }
 //   }
 
-
 //Desafío clases 11 y 12
-
-
 
 // $("body").append('<button id="agregar">Agregar Alumno</button>');
 
@@ -335,12 +332,22 @@
 //   });
 // });
 
-
 //Desafío clases 11 y 12
 
+class Alumno {
+  constructor(name, subject, book, nota1, exam, nota2) {
+    this.name = name;
+    this.subject = subject;
+    this.book = book;
+    this.nota1 = nota1;
+    this.exam = exam;
+    this.nota2 = nota2;
+  }
+}
+
+const curso = [];
 
 function submitStudentData() {
-
   var name = document.getElementById("name").value;
   var subject = document.getElementById("subject").value;
   var book = document.getElementById("book").value;
@@ -348,28 +355,87 @@ function submitStudentData() {
   var exam = document.getElementById("exam").value;
   var nota2 = document.getElementById("nota2").value;
 
- 
+  let alumno = new Alumno(name, subject, book, nota1, exam, nota2);
 
-  let  dataString = {
+  curso.push(alumno);
 
-  name: name,
-  subject: subject,
-  book:book,
-  nota1:nota1,
-  exam:exam,
-  nota2:nota2
+  for (let i = 0; i < curso.length; i++) {
+    localStorage.setItem("curso", JSON.stringify(curso));
   }
 
+  let vectorCurso = localStorage.getItem("curso");
 
-  if (name == '' || subject == '' || book == '' || nota1 == ''|| exam == ''|| nota2 == '') {
-  alert("Por favor, complete todos los campos");
-  } else {
-  $.ajax({
-  method: "POST",
-  url: "data.json",
-  data: dataString,
+  if (!vectorCurso) {
+    localStorage.setItem("alumno", JSON.stringify(curso));
+  }
+  alert("Los datos se han cargado correctamente");
+  vectorCurso = JSON.parse(vectorCurso);
+}
 
-  });
+document
+  .querySelector("#resultados")
+  .addEventListener("click", mostrarResultados);
+
+function mostrarResultados() {
+  const xhttp = new XMLHttpRequest();
+
+  xhttp.open("GET", "alumnos.json", true);
+
+  xhttp.send();
+
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      let datosAlumnos = JSON.parse(this.responseText);
+
+      let content = document.querySelector("#contentAlumnos");
+
+      for (let alumno of datosAlumnos) {
+        content.innerHTML += `
+      
+                
+                <tr>
+                    <th scope="row">${alumno.name}</th>
+                    <td>${alumno.subject}</td>
+                    <td>${alumno.book}</td>
+                    <td>${alumno.nota1}</td>
+                    <td>${alumno.exam}</td>
+                    <td>${alumno.nota2}</td>
+                </tr>
+                
+                `;
+      }
+    }
+  };
+
+  document.querySelector("#button").addEventListener("click", traerHorarios);
+
+  function traerHorarios() {
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.open("GET", "data.json", true);
+
+    xhttp.send();
+
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let datosHorarios = JSON.parse(this.responseText);
+
+        let content = document.querySelector("#content");
+
+        for (let dato of datosHorarios) {
+          content.innerHTML += `
+                
+                <tr>
+                    <th scope="row">${dato.id}</th>
+                    <td>${dato.Materia}</td>
+                    <td>${dato.Docente}</td>
+                    <td>${dato.Horario}</td>
+                    <td>${dato.virtual ? "Si" : "No"}</td>
+                </tr>
+                
+                `;
+        }
+      }
+    };
   }
-  return false;
-  }
+}

@@ -30,12 +30,44 @@
       <input id="exam" type="text">
       <label>Nota :</label>
       <input id="nota2" type="text">
-      <input id="submit" onclick="submitStudentData()" type="button" value="Submit">
+      <input id="submit" onclick=submitStudentData() type="button" value="Procesar Datos">
       </div>
       </form>
-      <div id="clear"></div>
       </div>
       </div>
+      <button class="buttons-style" id="resultados">Mostrar Resultados</button>
+      <div>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Nombre y Apellido</th>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Cartilla</th>
+                    <th scope="col">Nota Cartilla</th>
+                    <th scope="col">Evaluación</th>
+                    <th scope="col">Nota Evaluación</th>
+                </tr>
+            </thead>
+            <tbody id="contentAlumnos">
+            </tbody>
+        </table>
+    </div>
+      <button class="buttons-style"  id="button">Mostrar Horarios</button>
+      <div id="#div1">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Docente</th>
+                    <th scope="col">Horario</th>
+                    <th scope="col">¿Clases Virtuales?</th>
+                </tr>
+            </thead>
+            <tbody id="content">
+            </tbody>
+        </table>
+    </div>
 
       <!-- <ul>
        <li>

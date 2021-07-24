@@ -1,3 +1,37 @@
-{
-    
-}
+[
+    {
+        "id": 1,
+        "Materia": "Matemática",
+        "Docente": "Nabila Videla",
+        "Horario": "Martes 19:30 a 22:30",
+        "virtual":  true
+    },
+    {
+        "id": 2,
+        "Materia": "Lengua",
+        "Docente": "Sonia Gatta",
+        "Horario": "Lunes 19:30 a 22:30",
+        "virtual":  true
+    },
+    {
+        "id": 3,
+        "Materia": "Ciencias Naturales",
+        "Docente": "María José Gómez",
+        "Horario": "Jueves 19:30 a 22:30",
+        "virtual":  true
+    },
+    {
+        "id": 4,
+        "Materia": "Historia",
+        "Docente": "Samanta Hermaná",
+        "Horario": "Viernes 19:30 a 22:30",
+        "virtual":  true
+    },
+    {
+        "id": 5,
+        "Materia": "Inglés",
+        "Docente": "Marta Salvadores",
+        "Horario": "Miércoles 19:30 a 22:30",
+        "virtual": false
+    }
+]
