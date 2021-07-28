@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="scss/alumnos.css" />
     <title>Listado de Alumnos</title>
   </head>
@@ -15,98 +18,63 @@
 
     <div id="mainform">
       <div class="innerdiv">
-      <h2>Ingrese aquí la información</h2>
-      <form id="form" name="form">
-      <div>
-      <label>Nombre y Apellido :</label>
-      <input id="name" type="text">
-      <label>Materia:</label>
-      <input id="subject" type="text">
-      <label>Cartilla:</label>
-      <input id="book" type="text">
-      <label>Nota :</label>
-      <input id="nota1" type="text">
-      <label>Evaluación:</label>
-      <input id="exam" type="text">
-      <label>Nota :</label>
-      <input id="nota2" type="text">
-      <input id="submit" onclick=submitStudentData() type="button" value="Procesar Datos">
+        <h2>Ingrese aquí la información</h2>
+        <form id="form" name="form">
+          <div>
+            <label>Nombre y Apellido :</label>
+            <input id="name" type="text" />
+            <label>Materia:</label>
+            <input id="subject" type="text" />
+            <label>Cartilla:</label>
+            <input id="book" type="text" />
+            <label>Nota :</label>
+            <input id="nota1" type="text" />
+            <label>Evaluación:</label>
+            <input id="exam" type="text" />
+            <label>Nota :</label>
+            <input id="nota2" type="text" />
+            <input id="submit" type="button" value="Procesar Datos" />
+          </div>
+        </form>
       </div>
-      </form>
-      </div>
-      </div>
-      <button class="buttons-style" id="resultados">Mostrar Resultados</button>
-      <div>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Nombre y Apellido</th>
-                    <th scope="col">Materia</th>
-                    <th scope="col">Cartilla</th>
-                    <th scope="col">Nota Cartilla</th>
-                    <th scope="col">Evaluación</th>
-                    <th scope="col">Nota Evaluación</th>
-                </tr>
-            </thead>
-            <tbody id="contentAlumnos">
-            </tbody>
-        </table>
     </div>
-      <button class="buttons-style"  id="button">Mostrar Horarios</button>
-      <div id="#div1">
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Materia</th>
-                    <th scope="col">Docente</th>
-                    <th scope="col">Horario</th>
-                    <th scope="col">¿Clases Virtuales?</th>
-                </tr>
-            </thead>
-            <tbody id="content">
-            </tbody>
-        </table>
+    <button class="buttons-style table-title" onclick="">
+      Detalle Alumnos
+    </button>
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th scope="col">Nombre y Apellido</th>
+          <th scope="col">Materia</th>
+          <th scope="col">Cartilla</th>
+          <th scope="col">Nota Cartilla</th>
+          <th scope="col">Evaluación</th>
+          <th scope="col">Nota Evaluación</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button class="buttons-style" id="button">Mostrar Horarios</button>
+    <div id="#div1">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Materia</th>
+            <th scope="col">Docente</th>
+            <th scope="col">Horario</th>
+            <th scope="col">¿Clases Virtuales?</th>
+          </tr>
+        </thead>
+        <tbody id="content"></tbody>
+      </table>
     </div>
 
-      <!-- <ul>
-       <li>
-         <label for="name">Nombre y Apellido:</label>
-         <input type="text" id="name" name="user_name">
-       </li>
-       <li>
-         <label for="materia">Materia:</label>
-         <input type="materia" id="materia" name="materia">
-       </li>
-       <li>
-        <label for="cartilla">Cartilla:</label>
-        <input type="text" id="cartilla" name="cartilla">
-      </li>
-      <li>
-        <label for="notacartilla">Nota Cartilla:</label>
-        <input type="text" id="notacartilla" name="notacartilla">
-      </li>
-      <li>
-        <label for="notaevaluacion">Nota Evaluación:</label>
-        <input type="text" id="notaevaluacion" name="notaevaluacion">
-      </li>
-
-  <li>
-    <label for="comments">Comentarios:</label>
-    <textarea id="comments" name="comments"></textarea>
-
-
-      </ul>
-      <input type="submit" value="Submit" id="btnSubmit"/>
-    </form> -->
-
-
-     
     <ul id="alumnos"></ul>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    
-    <script src="main.js"></script>
-
-
+    <script src="js/main.js"></script>
+    <script src="js/registrarAlumnos.js"></script>
+    <script src="js/mostarAlumnos.js"></script>
   </body>
 </html>
